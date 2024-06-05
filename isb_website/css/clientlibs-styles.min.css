@@ -1,0 +1,5 @@
+@media(max-width:768px){.img-overlay-banner-isb{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+.owl-carousel .ban-txt{z-index:9000}
+}
+@media(min-width:768px){.img-overlay-banner-isb{background:none !important;opacity:0 !important}
+}
