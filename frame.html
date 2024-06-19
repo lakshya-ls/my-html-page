@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=5"
+    />
+    <meta name="theme-color" content="#f9e6e1" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <script
+      defer="defer"
+      crossorigin="anonymous"
+      src="https://dev-api.hotelzify.com/hotel/v1/tracker"
+    ></script>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link
+      rel="preconnect"
+      href="https://www.google-analytics.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://www.google.com" />
+    <link
+      rel="dns-prefetch"
+      href="https://googleads.g.doubleclick.net"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://ik.imagekit.io"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="dns-prefetch"
+      href="https://hotelzify-prod-images-bucket.s3.ap-south-1.amazonaws.com"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
+    <script
+      defer="defer"
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11024745253"
+    ></script>
+    <script defer="defer">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "AW-11024745253");
+    </script>
+    <script defer="defer">
+      const fetchImages = async () => {
+        var e = 100;
+        let t;
+        if (
+          ("3g" === window?.navigator?.connection?.effectiveType
+            ? (e = 60)
+            : "2g" === window?.navigator?.connection?.effectiveType
+            ? (e = 40)
+            : "slow-2g" === window?.navigator?.connection?.effectiveType &&
+              (e = 20),
+          (paths = location?.pathname?.split("/") || []),
+          window.location.host.includes("bookmystay"))
+        )
+          t = window.location.host.startsWith("www.")
+            ? `websiteSlug=${window.location.host.split(".")[1]}`
+            : `websiteSlug=${window.location.host.split(".")[0]}`;
+        else if (
+          [
+            "www.hotelzify.com",
+            "hotelzify.com",
+            "dev.hotelzify.com",
+            "www.dev.hotelzify.com",
+            "localhost:3005",
+            "localhost:3006",
+            "localhost:3002",
+          ].includes(location?.host)
+        )
+          paths?.length > 2
+            ? (t = `id=${paths[2]}`)
+            : 2 === paths?.length && (t = `websiteSlug=${paths[1]}`);
+        else {
+          let e = window.location.host;
+          e.includes("www.") && e.replace("www.", ""), (t = `domain=${e}`);
+        }
+        const a = await fetch(
+            `https://3wsn1d8jrc.execute-api.ap-south-1.amazonaws.com/prod/hotel/v1/hotel/images?${t}`
+          ),
+          o = await a.json();
+        window;
+        let i = window?.innerWidth > 901 ? 300 : 400;
+        if (
+          o?.data &&
+          (o?.data?.addonImage?.map((t, a) => {
+            let o = document.createElement("link");
+            (o.rel = "preload"),
+              (o.href = t + `?tr=w-300,ar-1-1,h-300,q-${e},fo-auto`),
+              (o.fetchpriority = "high"),
+              (o.as = "image"),
+              (o.type = "image/webp"),
+              document.head.appendChild(o);
+          }),
+          o?.data?.hotelImage?.map((t, a) => {
+            let o = document.createElement("link");
+            (o.rel = "preload"),
+              (o.href = t + `?tr=w-600,ar-1-1,h-500,q-${e},fo-auto`),
+              (o.fetchpriority = "high"),
+              (o.as = "image"),
+              (o.type = "image/webp"),
+              document.head.appendChild(o);
+          }),
+          o?.data?.hotelImage?.map((t, a) => {
+            let o = document.createElement("link");
+            (o.rel = "preload"),
+              (o.href = t + `?tr=w-300,ar-1-1,h-300,q-${e},fo-auto`),
+              (o.as = "image"),
+              (o.fetchpriority = "high"),
+              (o.type = "image/webp"),
+              document.head.appendChild(o);
+          }),
+          o?.data?.roomImage?.map((t, a) => {
+            let o = document.createElement("link");
+            (o.rel = "preload"),
+              (o.href = t + `?tr=w-${i},ar-1-1,h-300,q-${e},fo-auto`),
+              (o.fetchpriority = "high"),
+              (o.as = "image"),
+              (o.type = "image/webp"),
+              document.head.appendChild(o);
+          }),
+          o?.data?.logo && o?.data?.logo?.length > 0)
+        ) {
+          let e = document.createElement("link");
+          (e.rel = "preload"),
+            (e.href = o?.data?.logo),
+            (e.as = "image"),
+            (e.type = "image/webp"),
+            (e.fetchpriority = "high"),
+            document.head.appendChild(e);
+        }
+      };
+      fetchImages();
+    </script>
+    <script defer="defer" src="/static/js/main.d947aa63.js"></script>
+    <!-- <script
+      type="module"
+      src="https://beacon.concierge.liveswitch.com/bubble.js"
+      defer="defer"
+    ></script>
+    <script>
+      window.liveSwitchConciergeCodeName = "https-app-supbubble-com-websites";
+    </script> -->
+    <link href="/static/css/main.aacbec6d.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
