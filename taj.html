@@ -17472,13 +17472,31 @@
         ]
       }
     </script>
-    <script
+    <!-- <script
       type="module"
       src="https://beacon.concierge.liveswitch.com/bubble.js"
       defer
     ></script>
     <script>
       window.liveSwitchConciergeCodeName = "https-app-supbubble-com-websites";
+    </script> -->
+    <script>
+      function loadScript(url) {
+        window.liveSwitchConciergeCodeName = "https-app-supbubble-com-websites";
+        var script = document.createElement("script");
+        script.src = "https://beacon.concierge.liveswitch.com/bubble.js";
+        script.defer = true;
+        script.type = "module";
+        document.body.appendChild(script);
+        console.log("Value set");
+      }
+      const condition = true; // your condition here
+      if (condition) {
+        loadScript();
+      }
     </script>
   </body>
 </html>
+
+<!-- https://api.production.liveswitch.com/concierge/public/website/https-app-supbubble-com-website/bubbleConfig? -->
+<!-- https://api.production.liveswitch.com/concierge/public/website/https-app-supbubble-com-websites/bubbleConfig? -->
