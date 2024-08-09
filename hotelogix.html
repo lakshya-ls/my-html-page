@@ -1,0 +1,1428 @@
+
+
+
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        // Capture UTM parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmSource = urlParams.get('utm_source');
+        const utmMedium = urlParams.get('utm_medium');
+        const utmCampaign = urlParams.get('utm_campaign');
+        const utmTerm = urlParams.get('utm_term');
+        const utmContent = urlParams.get('utm_content');
+
+        // Store UTM parameters in Local Storage
+        if (utmSource) localStorage.setItem('utm_source', utmSource);
+        if (utmMedium) localStorage.setItem('utm_medium', utmMedium);
+        if (utmCampaign) localStorage.setItem('utm_campaign', utmCampaign);
+        if (utmTerm) localStorage.setItem('utm_term', utmTerm);
+        if (utmContent) localStorage.setItem('utm_content', utmContent);
+    });
+
+</script><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Hotel Management System trusted by 12000+ hotels in 100+ countries. Streamline hotel operations with flexible pricing & grow revenue with cloud-based Hotel PMS">
+        <meta name="keywords" content="hotel management software,hotel management system,hotel pms,hotel pms system,cloud hotel management software">
+        <meta name="language" content="English" />
+        <meta name="google-site-verification" content="g8vddN3c153Ohw_uB_VxaQm2h3Ag0aC-We4wDfHBpnw" />
+        <meta name="google-site-verification" content="s2LuJulmX1gGhWciQ7whtvA-ROTEgx5GnIcXphVA0LE" />
+        <title>Hotel Management System- Cloud-based Hotel PMS | Hotelogix</title>
+        <meta property="og:image" content="https://www.hotelogix.com/images/hotelogix-logo-new.png">
+        <!-- CSS Global Compulsory  -->
+        <link rel="alternate" href="https://www.hotelogix.com/" hreflang="x-default" />
+        <link rel="alternate" href="https://www.hotelogix.com/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.hotelogix.com/es/" hreflang="es-es" />
+        <link rel="alternate" href="https://www.hotelogix.com/portuguese/" hreflang="pt-pt" />
+        
+        <!-- For SEO  -->
+        <link rel="canonical" href="https://www.hotelogix.com" />
+        
+        <link rel="author" href="https://plus.google.com/101203479709817071199"/>
+<link rel="icon" href="https://www.hotelogix.com/images/favicon.ico">
+<!-- Bootstrap core -->
+<link rel="preload" href="https://www.hotelogix.com/css/bootstrap.min.css" as="style"/>
+<link rel="stylesheet" type="text/css" href="https://www.hotelogix.com/css/bootstrap.min.css">
+<link rel="preload" href="https://www.hotelogix.com/css/bootstrapValidator.min.css" as="style"/>
+<link rel="stylesheet" type="text/css" href="https://www.hotelogix.com/css/bootstrapValidator.min.css">
+<!-- Custom styles for this template -->
+<link rel="preload" href="https://www.hotelogix.com/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://www.hotelogix.com/fonts/roboto-light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="https://www.hotelogix.com/fonts/coves-light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="https://www.hotelogix.com/fonts/glyphicons-halflings-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://www.hotelogix.com/css/main.css?zxv=20221020" as="style"/>
+<link rel="stylesheet" type="text/css" href="https://www.hotelogix.com/css/main.css?zxv=20221020" >
+<link rel="stylesheet" type="text/css" href="https://www.hotelogix.com/css/new_home.css">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="preload" href="https://www.hotelogix.com/js/hmsAnalytics.js?zmxv=20221020" as="script">
+
+<!-- <link rel="stylesheet" type="text/css" href="/style.css"> -->
+
+<script src="https://www.hotelogix.com/js/hmsAnalytics.js?zmxv=20221020"></script>
+<script>
+    var ROOT_HTTP_URL = "https://www.hotelogix.com";
+    var VISITOR_IP    = "219.65.110.26";
+    var PMS_URL       = "https://staygrid.com";
+    
+    var PHP_REFERER   = "";
+    
+    var PHP_USOURCE   = "";
+    var PHP_UMEDIUM   = "";
+    var PHP_UCAMPAIGN = "";
+    var PHP_SOURCE    = "";
+    
+    hmst.ready({
+            baseUrl:ROOT_HTTP_URL
+           ,phpReferer:PHP_REFERER
+           ,phpUsource:PHP_USOURCE
+           ,phpUmedium:PHP_UMEDIUM
+           ,phpUcampaign:PHP_UCAMPAIGN
+           ,phpSource:PHP_SOURCE
+        });
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script>
+    var CAPTCHA_READY = false;
+    function onloadCallback()
+    {
+        CAPTCHA_READY = true;
+        console.log("One||====recaptcha/api.js LOADED");
+        
+    }
+</script>
+
+<!-- Microsoft Clarity Tracking code -->
+<script type="text/javascript"> (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "fbhxxhyg26"); </script> 
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5LF671VB9"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-F5LF671VB9'); </script>        <!-- Install Google Optimize code -->
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KWQQ3GH"></script>
+        <!-- revenuehero code -->
+        <script type="text/javascript" src="https://app.revenuehero.io/scheduler.min.js"></script>
+
+        <!-- Start VWO Async SmartCode -->
+        <script type='text/javascript' id='vwoCode'>
+            window._vwo_code=window._vwo_code || (function() {
+            var account_id=682994,
+            version=1.4,
+            settings_tolerance=2000,
+            library_tolerance=2500,
+            use_existing_jquery=false,
+            is_spa=1,
+            hide_element='body',
+            /* DO NOT EDIT BELOW THIS LINE */
+            f=false,d=document,vwoCodeEl=document.querySelector('#vwoCode'),code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},getVersion:function(){return version},getMatchedCookies:function(e){var t=[];if(document.cookie){t=document.cookie.match(e)||[]}return t},getCombinationCookie:function(){var e=code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);e=e.map(function(e){try{var t=decodeURIComponent(e);if(!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)){return''}return t}catch(e){return''}});var i=[];e.forEach(function(e){var t=e.match(/([\d,]+)/g);t&&i.push(t.join('-'))});return i.join('|')},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');vwoCodeEl&&e.setAttribute('nonce',vwoCodeEl.nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);var n=this.getCombinationCookie();this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version+(n?'&c='+n:''));return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
+        </script>
+        <!-- End VWO Async SmartCode -->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-965046482"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-965046482');
+        </script>
+
+        <!-- Breadcrumb Schema -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.hotelogix.com/"  
+        }]
+        }
+        </script>
+
+        <!-- FAQs Schema -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "What is Hotelogix?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headquartered in Singapore, Hotelogix is a globally leading cloud-based hotel management software. It offers an industry-first Multi-property Management System, Hotel PMS, Mobile PMS App, and Guest Services Management App for independent and hotel groups.
+
+        Hotelogix has the remarkable feat of implementing the most extensive multi-property deployment of 50000+ rooms across 500+ properties under a single group.
+
+        With the trust of 5000+ hotels in 100+ countries, including South Asia, Southeast Asia, the Middle East, LATAM, Europe and North America, Hotelogix has been instrumental in driving their growth while helping them sell more rooms at the optimum rate and serving guests better."
+            }
+        },{
+            "@type": "Question",
+            "name": "Who uses Hotelogix?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hospitality properties of all categories, including small/independent hotels, resorts, service apartments and hostels, bed and breakfasts, large hotels, and hotel groups, use Hotelogix to streamline operations, gain better control over their business processes, save on software ownership costs, improve operational efficiencies, sell more online, serve guests better and drive growth."
+            }
+        },{
+            "@type": "Question",
+            "name": "How does Hotelogix help hotel groups?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotelogix offers the industry-first multi-property management system on the cloud. It enables hotel groups to manage group-wide operations centrally from their corporate offices. They can centrally handle reservations, rates, travel agents, corporate clients, etc., for the entire group.
+
+        Additionally, Hotelogix helps them with easy access to central-level guest preferences and operation-critical reports to make better and more informed decisions. Also, Hotelogix assists them in expansion by quickly onboarding and taking live new properties."
+            }
+        },{
+            "@type": "Question",
+            "name": "Does Hotelogix integrate with third-party solutions?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Hotelogix integrates with 100+ best-in-class third-party solutions, including leading Hotel Channel Manager, Revenue Management Solution, CRM, Loyalty, Payment Gateways, Booking Engines, Accounting, Door Lock, Passport and ID Scanner, and many more. The objective here is to assist hotels in working with third-party solutions of their choice for 360-degree hotel operations."
+            }
+        },{
+            "@type": "Question",
+            "name": "What is Hotelogix 2.5?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotelogix 2.5 is the simpler, better, faster, and smarter version of our already-matured Hotel PMS. It comes with improved UI elements, a sleek look, simple workflows, intuitive navigation, and new features to help hotels leverage the power of technology to the maximum extent.
+
+        The goal is to make it easy for hotel staff to access key areas of the PMS and complete tasks efficiently to eliminate errors and save time."
+            }
+        },{
+            "@type": "Question",
+            "name": "Does Hotelogix provide after-sales support?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hotelogix offers 24/7 multi-channel support to ensure your hotel is always up and running."
+            }
+        },{
+            "@type": "Question",
+            "name": "How does Hotelogix help me protect my hotel data from cyber breaches?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotelogix Cloud Hotel PMS is a PCI-compliant hotel management software that transmits data with industry-standard TLS/SSL encryption. In addition, it saves your data on firewall-protected servers with automatic backups and recovery. The application comes with a strong password policy with Multi-Factor Authentication."
+            }
+        },{
+            "@type": "Question",
+            "name": "How much does Hotelogix cost?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hotelogix is available on a subscription-based pricing model. It varies from hotel to Plus, it also depends on the type of third-party integrations/interfaces you want.
+
+        For more details contact support@hotelogix.com"
+            }
+        }]
+        }
+        </script>
+
+    </head>
+    <body class="home-page nav">
+
+       <!-- Google Tag Manager -->
+        <!-- Google tag manager no script start -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTJ6T4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- Google tag manager no script end -->
+<!-- Google tag manager start -->
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTJ6T4');
+</script>
+<!-- Google tag manager end -->
+
+<!-- Hotjar Tracking Code for https://www.hotelogix.com/ -->
+    <script>
+(function(h,o,t,j,a,r){
+h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+h._hjSettings={hjid:2787780,hjsv:6};
+a=o.getElementsByTagName('head')[0];
+r=o.createElement('script');r.async=1;
+r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "ce458cbf38fc8db08dae82627d9d43afb5b8d43ebdfbcd9d147dbf3785c3e8c6", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+<script>
+$zoho.salesiq.ready = function()
+{
+$zoho.salesiq.customfield.add(
+{
+"name":"Company name",
+"hint":"Enter your company name" ,
+"required":"true"
+});
+}
+</script>
+  
+        <!-- Fixed navbar start -->
+        
+
+
+<nav id="hlx-menu" class="navbar navbar-default navbar-fixed-top">
+   <!-- <div id="tpbr_topbar" style="position: relative;z-index: 99998;background: rgb(21, 23, 26);top: 0px;transition: 1s;padding: 2px 23px;">
+        <div id="tpbr_box" style="line-height: 2em;padding: 5px 0px 5px;background:#15171a;margin:0 auto;text-align:center;width:100%;color:white;font-size:16px;font-family: Helvetica, Arial, sans-serif;font-weight:300;" class="cursor-hover">Year End Offer alert - Supercharge your hotel business with Hotelogix Cloud Hotel PMS : <span style="color:#FFCA25;font-weight: 700;"> 50% off</span><a id="tpbr_calltoaction" style="background: #FFCA25; display: inline-block; padding: 0px 15px; color: white; text-decoration: none; margin: 1px 14px 0px; border-radius: 3px;border-radius: 4px !important;text-decoration: none !important;font-weight: 700;font-size: 15px;" href="https://try.hotelogix.com/yearend/?utm_source=blogbar&utm_medium=blog&utm_campaign=yearendofferblog" target="_blank">Grab the offer NOW</a>
+        </div>
+    </div> -->
+   <!-- ITB BERLIN 2019 Banner Widget Start -->
+    <!--<div class="widget-berlin hidden-xs hidden-sm" >
+                <div id="closeWidget-berlin">
+                    <a class="closeWidget-berlin" onclick="javascript:itbWidget();"><img  src="https://www.hotelogix.com/images/close-widget.png"/></a>
+                    <a id="itb-asia-2018-banner-widget"  href="https://www.hotelogix.com/hotel-software/itb/" title="ITB BERLIN 2019" target="_blank"><img id="widget-img-berlin" src="https://www.hotelogix.com/images/itb-berlin-widget-2019.jpg" alt="ITB BERLIN 2019"/></a>
+                </div>
+            </div> -->
+    <!-- ITB BERLIN 2019 Banner Widget End -->
+    <!--<div class="container relative">
+            <div id="call-us-box" class="in">
+                <a id="call-us" href="tel://+91 80 4749 7666">
+                    <i class="fa fa-phone"></i>
+                    <span>+91 80 4749 7666</span>
+                </a>
+            </div>
+    </div>-->
+    <div class="container relative">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.hotelogix.com/" class="navbar-brand"><img src="https://www.hotelogix.com/images/hotelogix-logo.png" alt="hotelogix.com"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">               
+            <ul class="nav navbar-nav navbar-main">
+                <li><a href="https://www.hotelogix.com/hotelogix-cloud-based-property-management-system" title="Features">Features</a></li>
+                <li><a href="https://www.hotelogix.com/products/property-management-system" title="Products">Products</a></li>
+                <li><a href="https://www.hotelogix.com/independent-property-pricing" title="Pricing">Pricing</a></li>
+    <!--                <li><a href="https://www.hotelogix.com/landing-property-types.php" title="Property Types">Property Types</a></li>-->
+                <li><a href="#" title="Company">Company</a></li>
+                <li><a href="https://www.hotelogix.com/resource-center" title="Hotelogix Resource Center">Resources</a></li>
+                <li><a href="#" title="Partners">Partners</a></li>
+                <!--<li><a href="https://www.hotelogix.com/careers.php" title="Join the Hotelogix team">Careers</a></li>-->
+    <!--                <li><a href="https://www.hotelogix.com/marketplace/" title="75+ Technology Integrations" style="background-color:#43a5db;color:#fff;font-size:16px;">Marketplace<img style="margin:-40px -16px -15px -35px;" class="hidden-xs hidden-sm" src="https://www.hotelogix.com/images/new.png"></a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-single-link">
+                <li><a href="https://www.hotelogix.com/property-management-system-large-hotels-hlxe" title="Enterprise">Enterprise <span class="new-tag">New</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.hotelogix.com/request-a-demo.php" class="btn-rounded btn-s-demo" title="Schedule Demo">Schedule Demo</a></li>
+                <li><a href="https://www.hotelogix.com/register.php" id="topband-trial-cta-in" class="btn-rounded btn-try-now">Start Free Trial</a></li>                <li><a href="https://staygrid.com/frontdesk/login/login/" class="btn-rounded btn-login" target="_blank" title="Login"><i class="fa fa-user"></i></a></li>
+            </ul>
+            <!-- <div id="btnRacb">
+                <a href="https://www.hotelogix.com/request-a-call-back" class="btn-rounded" title="Request a Call Back">Request a Call Back</a>
+            </div> -->
+        </div>
+        <!--        <ul id="language-switch">
+                        <li><a href="https://www.hotelogix.com/es/index.php" title="Spanish" class="flag es">Spanish</a></li>
+                        <li><a href="https://www.hotelogix.com/portuguese/index.php" title="Portuguese" class="flag po">Portuguese</a></li>
+                    </ul>-->
+        <!--/.nav-collapse -->
+    </div>
+    <div id="navbar-tabs" class="hidden-xs mask relative">
+        <div class="container full mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/hotelogix-cloud-based-property-management-system" title="PMS Overview">Overview</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-frontdesk-management-system" title="Frontdesk">Frontdesk</a></li>
+                <li><a href="https://www.hotelogix.com/point-of-sale-system" title="Point of Sale">Point of Sale</a></li>
+                <li><a href="https://www.hotelogix.com/housekeeping" title="Housekeeping">Housekeeping</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-distribution-system" title="Distribution">Distribution</a></li>
+                <li><a href="https://www.hotelogix.com/reports" title="Reports">Reports</a></li>
+                <li><a href="https://www.hotelogix.com/other-interfaces" title="Interfaces">Interfaces</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-mobile-pms" title="Mobile Hotel">Mobile Hotel</a></li>
+                <li><a href="https://www.hotelogix.com/guest-services-app" title="Guest Services App">Guest Services App</a></li>
+                <li><a href="https://www.hotelogix.com/multi-property-management-hlxe" title="Multi-property Management">Multi-property Management</a></li>
+                <li><a href="https://www.hotelogix.com/central-reservation-office-for-multi-properties-hlxe" title="Central Reservation Office">CRO</a></li>
+                <li><a href="https://www.hotelogix.com/guest-feedback-reputation-management-multi-properties-hlxe" title="Guest Feedback Collection and Reputation Management">Reputation Management</a></li>
+                <li><a href="https://www.hotelogix.com/hotel-intelligence-learning-multi-properties-hlxe" title="Intelligent Learning and Instant Support">Intelligent Learning</a></li>
+                <li><a href="https://www.hotelogix.com/enterprise-grade-security-hlxe" title="Enterprise-grade Security">Enterprise-grade Security</a></li>
+            </ul>
+        </div>
+        <div class="container align-left mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/products/property-management-system" title="Property Management System">Property Management System</a></li>
+                <li><a href="https://www.hotelogix.com/products/revenue-management-service" title="Revenue Management Service">Revenue Management Service</a></li>
+                <li><a href="https://www.hotelogix.com/products/channel-manager" title="Channel Manager">Channel Manager</a></li>
+                <li><a href="https://www.hotelogix.com/products/web-booking-engine" title="Web Booking Engine">Web Booking Engine</a></li>
+            </ul>
+        </div>
+        <div class="container align-left mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/independent-property-pricing" title="Independent Property Pricing">Independent Property</a></li>
+                <li><a href="https://www.hotelogix.com/multi-property-pricing" title="Multi Property Pricing">Multi Property</a></li>
+            </ul>
+        </div>
+    <!--        <div class="container align-left mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/property-types-bed-and-breakfast.php" title="B&amp;Bs Management Software">B&amp;Bs</a></li>
+                <li><a href="https://www.hotelogix.com/central-reservation-system-for-hotels.php" title="Central Reservation System">City Hotels</a></li>
+                <li><a href="https://www.hotelogix.com/resorts-management-system-software.php" title="Resorts Management Software">Resorts</a></li>
+                <li><a href="https://www.hotelogix.com/apartments-management-system-software.php" title="Apartments Management System">Serviced Apartments</a></li>
+                <li><a href="https://www.hotelogix.com/multiple-property-management-system.php" title="Multi Property">Multi Property</a></li>
+            </ul>
+        </div>-->
+        <div class="container align-left mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/about-us" title="About us">About us</a></li>
+                <li><a href="https://www.hotelogix.com/leadership" title="Leadership">Leadership</a></li>
+                <li><a href="https://www.hotelogix.com/investor" title="Investors">Investors</a></li>
+                <li><a href="https://www.hotelogix.com/careers" title="Join the Hotelogix team">Careers</a></li>
+                <li><a href="https://www.hotelogix.com/contact-us" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="container full mask">
+            <ul class="clearfix">
+                <!--<li><a href="https://www.hotelogix.com/resource-center.php" title="Hotelogix Resource Center">Resources</a></li>-->
+                <li><a href="https://www.hotelogix.com/blog/" title="Blog">Blog</a></li>
+                <li><a href="https://www.hotelogix.com/hotel-solution" title="Hotel Solutions">Hotel Solutions</a></li>
+                <li><a href="https://www.hotelogix.com/case-studies" title="Property Management Case Studies">Case Studies</a></li>
+                <li><a href="https://www.hotelogix.com/testimonials-product" title="Testimonials">Testimonials</a></li>
+                <li><a href="https://www.hotelogix.com/events" title="Events">Events</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-webinar" title="Hospitality Management Webinars">Webinars</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-video" title="Hotel Management Demo Videos">Demo Videos</a></li>
+                <li><a href="https://www.hotelogix.com/hotelogix-manuals-guides" title="Hotelogix User Manuals & Guides">Manuals & Guides</a></li>
+                <li><a href="https://www.hotelogix.com/faq" title="FAQs">FAQs</a></li>
+                <li><a href="https://www.hotelogix.com/ebooks/" title="Ebooks">Ebooks</a></li>
+                <li><a href="https://www.hotelogix.com/white-papers" title="White Papers">White Papers</a></li>
+                <li><a href="https://www.hotelogix.com/media-coverage" title="New & Media">News &amp; Media</a></li>
+            </ul>
+        </div>
+        <div class="container align-left mask">
+            <ul class="clearfix">
+                <li><a href="https://www.hotelogix.com/business-partners" title="Our Technology Partners">Technology Partners</a></li>
+                <li><a href="https://www.hotelogix.com/partner" title="Reseller Program">Reseller Program</a></li>
+            </ul>
+        </div>
+     </div>
+</nav>
+<style>
+        .widget-berlin{position:fixed;right:0px;top:190px;z-index:101;}
+        .closeWidget-berlin{position:absolute;top:-10px;left:-2px;}
+        #widget-img-berlin{border: 1px solid #dcdcdc;}
+        .btn-hotelogix-enterprise{background-color: #fff !important;color:#000 !important;border-color:#000 !important;border: 1px solid !important;}
+        .btn-hotelogix-enterprise:hover{background-color: #ffc600 !important;color:#000 !important;border-color:#ffc600 !important;}
+    </style>
+    <script>
+function itbWidget()
+{
+    var divid=document.getElementById('closeWidget-berlin');
+    if(divid!=null)
+    {
+      divid.style.display = "none";
+    }
+}
+</script>
+                        
+        <div class="banner-mar24 margin-header">
+            <div class="bb animatedParent animateOnce text-center">
+                <h1 class="size14 animated bounceInDown">Hotel Management System- Cloud-based Hotel PMS | Hotelogix</h1>
+                <div class="big-text animated bounceInUp">Maximize <span class="yb-txt">Revenue.</span></div>
+                <div class="big-text animated bounceInUp">Make Guests <span class="yb-txt">Happy.</span></div>
+                <p class="animated bounceInDown">
+                    Hotelogix enables you to achieve the two things that matter to you: <br>
+                    more revenues and happier guests.
+                </p>
+                <div data-hubspot-wrapper-cta-id="156476268555"> 
+                    <a class="btn-s-demo" href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/click?encryptedPayload=AVxigLJvSA7u1SiI%2BTM9Bp4s25mtJ8XepaxuDz8VSr1iIOkHilYjbd1Lw%2BrX%2F%2Fma7K6Y5yJiMb78KzPVNUAzdWama7kFr25tkPdbCDGnL1S28ZEI%2BbMhJesz1Zv6OPTgKDtzkUttfR0JRb9i5ZdZd5hezoFUo%2B%2BFfH%2FwfzgnSVjzCuWI8orqW9WnxPj2DYM%3D&amp;portalId=22520621" data-hubspot-cta-id="156476268555"> Schedule Demo</a> 
+                    <a class="btn-f-trial" href="https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/click?encryptedPayload=AVxigLLDEqZ182ulokRVn3LVEHIYCgsv4aHA4Y1UTla%2FJU35zot7BecofqsJToVTkTvbVvdFWyGw4dhk6S%2B1%2Fxkjjb1F82%2FkahvLOPuTFycXWmCLbYYi4Jug1BiTFpPgfzfprPadeNj9hDUxAhFhcQKnF5HVlzfRfATqW4qE0NcXi5QWWI8Z1YXp&amp;portalId=22520621" data-hubspot-cta-id="156522267542"> Start Free Trial</a> 
+                </div>
+                <section class="hlx-count text-center">
+                    <div class="flex">
+                        <div class="item-count">
+                            12000+
+                            <span>Hotels</span>
+                        </div>
+                        <div class="item-count">
+                            100+
+                            <span>Countries</span>
+                        </div>
+                        <div class="item-count">
+                            120K+
+                            <span>Users</span>
+                        </div>
+                        <div class="item-count">
+                            13
+                            <span>Languages</span>
+                        </div>
+                    </div>
+                </section>
+            </div>            
+        </div>
+
+        <div class="bg-white trusted">
+            <div class="container animatedParent animateOnce">
+                <h2 class="animated bounceInDown">Trusted by hoteliers in <span>100+ countries</span>.</h2>
+            </div>
+        </div>
+        <div class="home-testimonial">
+            <div class="container animatedParent animateOnce">
+                <h3 class="animated bounceInUp">Here’s what our customers have to say</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                        <div class="ht-quote animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-quote-lt.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <p class="ht-text animated bounceInDown">Thanks to Hotelogix, our operating costs have come down drastically since we’ve cut down on commissions, labor and overall reservation costs. Hotelogix has also helped us conquer the overbooking problem. Their support team is always present and happy to help us out, regardless of what the issue is, or what time it is!</p>
+                        <p class="ht-name animated bounceInUp">Brian Coleman</p>
+                        <p class="animated bounceInDown">Biltmore Greensboro Hotel, USA</p>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="ht-photo animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-Brian-Coleman.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uge">
+            <div class="container animatedParent animateOnce">
+                <div class="row bg-white">
+                    <div class="col-xs-12 col-md-5">
+                        <h2 class="animated bounceInUp">Our cloud-based software<br> enables you to deliver<br> <span>unmatched guest<br> experience</span></h2>
+                        <h3 class="animated bounceInDown">How? It’s Simple.</h3>
+                        <p class="animated bounceInUp">We enable you manage reservations, optimize daily operations, handle payments, housekeeping and more. That way, you’re always in control of your business operations.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-push-1 uge-rt">
+                        <div class="uge-rt-h1 animated bounceInDown">Here’s what our customers<br> have experienced with Hotelogix</div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3"><div class="uge-rt-blocks animated bounceIn"><span class="uge-rt-val">20<span>%</span></span> Increase in revenues</div></div>
+                            <div class="col-xs-6 col-md-3"><div class="uge-rt-blocks animated bounceIn"><span class="uge-rt-val">45<span>%</span></span> Boost in online booking</div></div>
+                            <div class="col-xs-6 col-md-3"><div class="uge-rt-blocks animated bounceIn"><span class="uge-rt-val">60<span>%</span></span> Savings in staff time</div></div>
+                            <div class="col-xs-6 col-md-3"><div class="uge-rt-blocks animated bounceIn"><span class="uge-rt-val">300<span>%</span></span> More guest reviews</div></div>
+                        </div>
+                        <div class="uge-rt-h2 animated bounceInDown">You can achieve these numbers too. <span>Want to know how?</span></div>
+                        <p class="animated bounceInUp"><a href="request-a-demo.php?utm_source=visit&utm_medium=lead&utm_campaign=formfill&utm_term=home&utm_content=1" class="btn btn-2022 blue btn-no-margin" >Get Demo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-testimonial">
+            <div class="container animatedParent animateOnce">
+                <h3 class="animated bounceInUp">Here’s what our customers have to say</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                        <div class="ht-quote animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-quote-lt.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <p class="ht-text animated bounceInDown">We wanted to move on to a cloud based, simple and agile solution with round the clock support system. The PMS has helped us get easy access to our business data anytime, from anywhere, and has saved on our IT infrastructure costs.</p>
+                        <p class="ht-name animated bounceInUp">Amin Jamal</p>
+                        <p class="animated bounceInDown">Regency Grand Suites, Philippines</p>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="ht-photo animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-Amin-Jamal.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Home page blocks start -->
+        <div class="pms-operations">
+            <div class="container animatedParent animateOnce">
+                <h2 class="animated bounceInUp">All your PMS operations under one roof</h2>
+                <p class="pms-operations-text animated bounceInDown">With Hotelogix, you have one easy-to-learn system that’s working for you 24x7</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-cloud-based-hotel-PMS.webp" alt="Hotel hospitality management system software">
+                            </div>
+                            <h3 class="animated bounceInDown">Cloud-based hotel PMS</h3>
+                            <p class="animated bounceInUp">Manage multiple properties with a single dashboard</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-powerful-web-booking-engine.webp" alt="Web booking engine">
+                            </div>
+                            <h3 class="animated bounceInDown">Powerful web booking engine</h3>
+                            <p class="animated bounceInUp">Add our engine to your website, get more commission-free direct bookings</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-smart-channel-manager.webp" alt="Real-time 2-way Channel manager">
+                            </div>
+                            <h3 class="animated bounceInDown">Smart channel manager</h3>
+                            <p class="animated bounceInUp">Update room inventory and rates in real-time on all channels</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-simple-mobile-PMS.webp" alt="Decrease running cost using online hotel management system">
+                            </div>
+                            <h3 class="animated bounceInDown">Simple mobile PMS</h3>
+                            <p class="animated bounceInUp">Run your hotel operations on the mobile.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-intelligent-decisions.webp" alt="World's easiest hotel management system">
+                            </div>
+                            <h3 class="animated bounceInDown">Take intelligent decisions</h3>                           
+                            <p class="animated bounceInUp">100+ operations reports to help you make deft changes today and plan for tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-boost-online-reputation.webp" alt="Manage online reputation">
+                            </div>
+                            <h3 class="animated bounceInDown">Boost online reputation</h3>
+                            <p class="animated bounceInUp">Automate guest reviews and get live feedback on your services</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-efficient-housekeeping.webp" alt="Motel Management System Software">
+                            </div>
+                            <h3 class="animated bounceInDown">Efficient housekeeping</h3>
+                            <p class="animated bounceInUp">Get regular updates of your rooms. Maximize efficiency of your housekeeping staff</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-smart-frontdesk.webp" alt="hotel management software">
+                            </div>
+                            <h3 class="animated bounceInDown">Smart frontdesk</h3>
+                            <p class="animated bounceInUp">Grid-based updated dashboards enable your front desk deliver great guest experience</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="po-block animatedParent animateOnce">
+                            <div class="po-icon animated bounceIn">
+                                <img src="https://www.hotelogix.com/images/icon-enthusiastic-support.webp" alt="Hotel property management system (pms)">
+                            </div>
+                            <h3 class="animated bounceInDown">Enthusiastic 24x7 support</h3>
+                            <p class="animated bounceInUp">Got queries? Reach our live customer success executives and get them sorted easily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container animatedParent animateOnce">
+                <h2 class="simplify animated bounceInUp">Want to simplify your operations?</h2>
+                <p class="text-center animated bounceInDown"><a href="request-a-demo.php?utm_source=visit&utm_medium=lead&utm_campaign=formfill&utm_term=home&utm_content=2" class="btn btn-2022 green btn-no-margin">Get Demo</a></p>
+            </div>
+        </div>
+        <!-- Home page blocks end -->
+        <div class="home-testimonial">
+            <div class="container animatedParent animateOnce">
+                <h3 class="animated bounceInUp">Here’s what our customers have to say</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                        <div class="ht-quote animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-quote-lt.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <p class="ht-text animated bounceInDown">Subscription-based model of Hotelogix has helped in their rapid expansion. In the absence of a subscription-based model, such growth would not have been possible as one-time cost model like on-premise is expensive as compared to cloud. Thanks to Hotelogix, our operations have become very cost-effective and real-time.</p>
+                        <p class="ht-name animated bounceInUp">Rei Matsuda</p>
+                        <p class="animated bounceInDown">Kokotel, Thailand</p>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="ht-photo animated bounceIn">
+                            <img src="https://www.hotelogix.com/images/ht-Rei-Matsuda.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-cs">
+            <div id="homeCsCarousel" class="carousel slide autoplay" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCsCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeCsCarousel" data-slide-to="1"></li>
+                    <li data-target="#homeCsCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <h2>How a US-based hotel increased revenues by 40% with Hotelogix</h2>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="https://www.hotelogix.com/images/home-cs-fountain-inn.webp" class="home-cs-img">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="padding-horizonal-20">
+                                        <h3>The situation</h3>
+                                        <p>Based in Van Wert, Ohio, Fountain Inn faced operational challenges. The hotel struggled to manually check guests in and out, and hadn’t even tapped the online distribution model.</p>
+                                        <h3>Solution</h3>
+                                        <p>Hotelogix helped them with updated information on rates and inventory. A unified dashboard gave them data on key hotel metrics thereby boosting operational efficiency.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="cs-result">
+                                        <h3>Result</h3>
+                                        <p>The hotel achieved:</p>
+                                        <ul>
+                                            <li>Increased revenue by 40%</li>
+                                            <li>Increased OTA bookings by 30%</li>
+                                            <li>Direct bookings zoomed up by 30%</li>
+                                            <li>Zero overbooking hassles</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padding-top-20">
+                                <div class="col-xs-3 col-sm-2 col-md-1">
+                                    <div class="cs-quote">
+                                        <img src="https://www.hotelogix.com/images/cs-quote-lt.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                    <p class="cs-text">I have my own Account manager who is available 24/7! They have an unbelievable energy to be on top of everything and in my books they are the BEST! It was the customer service that won me over from my first ever interaction with them and this is why I stay with Hotelogix.</p>
+                                    <p class="cs-name">Dee Ping</p>
+                                    <p>Owner, Fountain Inn</p>
+                                </div>
+                            </div>
+                            <p class="text-center padding-bottom-20"><a href="https://www.hotelogix.com/case-studies/fountain-inn-usa" class="btn btn-2022 green-border btn-no-margin">Discover why Dee Ping is a big fan of Hotelogix</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <h2>An Arkansas-based hotel triumphs COVID-19 with Hotelogix</h2>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="https://www.hotelogix.com/images/home-cs-wanderoo-lodge.webp" class="home-cs-img">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="padding-horizonal-20">
+                                        <h3>The situation</h3>
+                                        <p>The COVID-19 pandemic had laid low Arkansas-based Wanderoo Lodge’s business. Moreover, lack of integration with channel managers slowed down daily operations.</p>
+                                        <h3>Solution</h3>
+                                        <p>Hotelogix enabled them to integrate with Airbnb and even helped set up a long-term stay program for guests who wished to work remotely. Working in the backdrop of the breathtaking Black Bass Lake was an offer not many could resist.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="cs-result">
+                                        <h3>Result</h3>
+                                        <ul>
+                                            <li>The hotel registered a 34% boost in occupancy since January 2020.</li>
+                                            <li>Besides, the hotel uses a single dashboard to predict supply needs, track finances and more.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padding-top-20">
+                                <div class="col-xs-3 col-sm-2 col-md-1">
+                                    <div class="cs-quote">
+                                        <img src="https://www.hotelogix.com/images/cs-quote-lt.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                    <p class="cs-text">Hotelogix has assisted Wanderoo Lodge in managing the increase in occupancy and sales - because of the software, our needs are easier to predict - for example, how many housekeepers we may need; or how much supplies we need to order. Hotelogix has also been a huge part in keeping track of our financial numbers and we are very thankful for the reports available to us.</p>
+                                    <p class="cs-name">Ethan Avanzino</p>
+                                    <p>Owner, Wanderoo Lodge</p>
+                                </div>
+                            </div>
+                            <p class="text-center padding-bottom-20"><a href="https://www.hotelogix.com/case-studies/wanderoo-lodge-eureka-springs-arkansas" class="btn btn-2022 green-border btn-no-margin">Discover why Ethan is a big fan of Hotelogix</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <h2>A Thai hotel finally gets rid of expensive on-premise software</h2>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="https://www.hotelogix.com/images/home-cs-kokotel-hotels.webp" class="home-cs-img">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="padding-horizonal-20">
+                                        <h3>The situation</h3>
+                                        <p>Bangkok-based Kokotel Hotels had a on-premise PMS that was proving too expensive to use. Its business had expanded and inventory tracking, accounting and bookings were all over the place.</p>
+                                        <h3>Solution</h3>
+                                        <p>Hotelogix’s cloud-based PMS provided them with a centralized dashboard of their properties. Integration with third party systems, financial reporting, and forecasting are now only a few clicks away.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="cs-result">
+                                        <h3>Result</h3>
+                                        <p>The hotel achieved:</p>
+                                        <ul>
+                                            <li>Not only was the hotel able to expand its business, but also increased profitability.</li>
+                                            <li>Every department has the tools they need to deliver maximum business impact.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padding-top-20">
+                                <div class="col-xs-3 col-sm-2 col-md-1">
+                                    <div class="cs-quote">
+                                        <img src="https://www.hotelogix.com/images/cs-quote-lt.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                    <p class="cs-text">Subscription-based model of Hotelogix has helped in rapid expansion. In the absence of a subscription-based model, such growth would not have been possible as one-time cost model like on-premise is expensive as compared to cloud. Thanks to Hotelogix, our operations have become very cost-effective and real-time.</p>
+                                    <p class="cs-name">Rei</p>
+                                    <p>CEO, Kokotel Hotels</p>
+                                </div>
+                            </div>
+                            <p class="text-center padding-bottom-20"><a href="https://www.hotelogix.com/case-studies/kokotel-hotels-bangkok-thailand" class="btn btn-2022 green-border btn-no-margin">Discover why Rei is a big fan of Hotelogix</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#homeCsCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#homeCsCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+                
+                
+        
+        <!-- Reviews Start-->
+        <div class="our-priority">
+           <div class="container animatedParent animateOnce">
+               <h2 class="animated bounceInUp">Our priority? Your Guest Experience</h2>
+               <p class="animated bounceInDown">We’re more than a software product. At Hotelogix, our #1 priority is your guest experience. <br>
+               Our trained experts help you set up your cloud-based PMS and start getting results from Day 1.</p>
+               <h3 class="animated bounceInUp">That’s why we’re rated highly by the experts</h3>
+               <div class="reviews">
+                   <div class="review animated bounceIn"><img src="images/review-software-suggest.webp" /></div>
+                   <div class="review animated bounceIn"><img src="images/review-capterra.webp" /></div>
+                   <div class="review animated bounceIn"><img src="images/review-getapp.webp" /></div>
+                   <div class="review animated bounceIn"><img src="images/review-software-advice.webp" /></div>
+               </div>
+           </div>
+        </div>
+        <!-- Reviews End-->
+        <!-- Customer story start -->
+        <div class="techniques">
+            <div class="container animatedParent animateOnce">
+                <h2 class="animated bounceInUp">Thought leadership from the specialists</h1>
+                <p class="animated bounceInDown">Learn the best growth techniques to grow and manage your hotel with our latest thought leadership</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="wl animated bounceInUp">Blog</h3>
+                        <p class="animated bounceIn"><a href="https://www.hotelogix.com/blog/2022/07/25/manage-hotels-online-reputation/" class="animatedParent animateOnce"><img src="images/home-blog-01.webp" /></a></p>
+                        <h3 class="text animated bounceInDown">How to manage your hotel’s online<br> reputation with a PMS?</h3>
+                        <p class="animated bounceInUp"><a class="btn btn-2022 small green btn-no-margin" href="https://www.hotelogix.com/blog/2022/07/25/manage-hotels-online-reputation/" role="button">Read More</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="wl animated bounceInUp">eBook</h3>
+                        <p class="animated bounceIn"><a href="https://www.hotelogix.com/landing_pages/ebooks/one-stop-guide-for-hoteliers-to-upsell-opportunities.php" class="animatedParent animateOnce"><img src="images/home-ebook-01.webp" /></a></p>
+                        <h3 class="text animated bounceInDown">A hotelier’s guide to winning at<br> upselling</h3>
+                        <p class="animated bounceInUp"><a class="btn btn-2022 small green btn-no-margin" href="https://www.hotelogix.com/landing_pages/ebooks/one-stop-guide-for-hoteliers-to-upsell-opportunities.php" role="button">Read More</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="wl animated bounceInUp">Blog</h3>
+                        <p class="animated bounceIn"><a href="https://www.hotelogix.com/blog/2022/07/20/how-changes-consumer-behaviour-impact-hotels/" class="animatedParent animateOnce"><img src="images/home-blog-02.webp" /></a></p>
+                        <h3 class="text animated bounceInDown">The future of distribution: How changes in consumer behavior will impact hotels</h3>
+                        <p class="animated bounceInUp"><a class="btn btn-2022 small green btn-no-margin" href="https://www.hotelogix.com/blog/2022/07/20/how-changes-consumer-behaviour-impact-hotels/" role="button">Read More</a></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <section class="acrdn">
+            <div class="container">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-target="#Collapseone" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">  
+                                <span class="faq-no">01</span>What is Hotelogix?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse in" id="Collapseone">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Headquartered in Singapore, Hotelogix is a globally leading cloud-based hotel management software. It offers an industry-first Multi-property Management System, Hotel PMS, Mobile PMS App, and Guest Services Management App for independent and hotel groups. </p>
+                                <p class="acordian-inner-content">Hotelogix has the remarkable feat of implementing the most extensive multi-property deployment of 50000+ rooms across 500+ properties under a single group. </p>
+                                <p class="acordian-inner-content">With the trust of 5000+ hotels in 100+ countries, including South Asia, Southeast Asia, the Middle East, LATAM, Europe and North America, Hotelogix has been instrumental in driving their growth while helping them sell more rooms at the optimum rate and serving guests better.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapsetwo" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">  
+                                <span class="faq-no">02</span> Who uses Hotelogix?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapsetwo">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Hospitality properties of all categories, including small/independent hotels, resorts, service apartments and hostels, bed and breakfasts, large hotels, and hotel groups, use Hotelogix to streamline operations, gain better control over their business processes, save on software ownership costs, improve operational efficiencies, sell more online, serve guests better and drive growth. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapsethree" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">03</span> How does Hotelogix help hotel groups?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapsethree">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Hotelogix offers the industry-first multi-property management system on the cloud. It enables hotel groups to manage group-wide operations centrally from their corporate offices. They can centrally handle reservations, rates, travel agents, corporate clients, etc., for the entire group. </p>
+                                <p class="acordian-inner-content">Additionally, Hotelogix helps them with easy access to central-level guest preferences and operation-critical reports to make better and more informed decisions. Also, Hotelogix assists them in expansion by quickly onboarding and taking live new properties. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapsefour" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">04</span> Does Hotelogix integrate with third-party solutions?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapsefour">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Yes. Hotelogix integrates with 100+ best-in-class third-party solutions, including leading Hotel Channel Manager, Revenue Management Solution, CRM, Loyalty, Payment Gateways, Booking Engines, Accounting, Door Lock, Passport and ID Scanner, and many more. The objective here is to assist hotels in working with third-party solutions of their choice for 360-degree hotel operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapsefive" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">05</span> What is Hotelogix 2.5?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapsefive">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Hotelogix 2.5 is the simpler, better, faster, and smarter version of our already-matured Hotel PMS. It comes with improved UI elements, a sleek look, simple workflows, intuitive navigation, and new features to help hotels leverage the power of technology to the maximum extent. </p>
+                                <p class="acordian-inner-content">The goal is to make it easy for hotel staff to access key areas of the PMS and complete tasks efficiently to eliminate errors and save time. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapsesix" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">06</span> Does Hotelogix provide after-sales support?
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapsesix">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Yes, Hotelogix offers 24/7 multi-channel support to ensure your hotel is always up and running.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapseseven" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">07</span> How does Hotelogix help me protect my hotel data from cyber breaches? 
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapseseven">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Hotelogix Cloud Hotel PMS is a PCI-compliant hotel management software that transmits data with industry-standard TLS/SSL encryption. In addition, it saves your data on firewall-protected servers with automatic backups and recovery. The application comes with a strong password policy with Multi-Factor Authentication. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-target="#Collapseeight" data-toggle="collapse" data-parent="#accordion">
+                            <h2 class="panel-title">
+                                <span class="faq-no">08</span> How much does Hotelogix cost? 
+                            </h2>
+                        </div>
+                        <div class="panel-collapse collapse" id="Collapseeight">
+                            <div class="panel-body">
+                                <p class="acordian-inner-content">Hotelogix is available on a subscription-based pricing model. It varies from hotel to Plus, it also depends on the type of third-party integrations/interfaces you want. </p>
+                                <p class="acordian-inner-content">For more details contact <a href="mailto:support@hotelogix.com" style="color:#000;"><b> support@hotelogix.com</b> </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Customer story end -->
+        <!-- ITB Asia 2022 start -->
+        <!-- <div class="itb-asia-2022-banner nand">
+            <div class="offer-rope"></div>
+            <div class="offer-img">
+                <a href="https://try.hotelogix.com/itb-asia-2022/?utm_source=Website"><img src="images/ITB-Asia-2022.jpg" alt="We will be at ITB Asia 2022" width="400" height="240"></a>
+            </div>
+            <div class="close-itb-asia-2022"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="open-itb-asia-2022"><img src="images/ITB-Asia-2022-small.jpg" alt="We will be at ITB Asia 2022" width="200" height="100"></div> -->
+        <!-- ITB Asia 2022 end -->
+
+        
+       <!-- Footer start -->
+         
+<footer id="footer">
+   <div class="container">
+        <div class="row animatedParent animateOnce">
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-title animated bounceInDown">Quick Links</div>
+                <ul class="animated bounceInUp">
+                    <li><a href="https://www.hotelogix.com/careers" title="Careers">Careers</a></li>
+                    <li><a href="https://www.hotelogix.com/events" title="Events">Events</a></li>
+                    <li><a href="https://www.hotelogix.com/case-studies-list" title="Case Studies">Case Studies</a></li>
+                    <li><a href="https://www.hotelogix.com/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="https://www.hotelogix.com/terms-of-service" title="Terms of Service">Terms of Service</a></li>                    
+                    <li><a href="https://www.hotelogix.com/general-data-protection-regulation" title="Check out this page for information on General Data Protection Regulation (the GDPR)">GDPR Compliance</a></li>                    
+                    <li><a href="https://www.hotelogix.com/partner" title="Become a Partner">Become a Partner</a></li>
+                    <li><a href="https://www.hotelogix.com/marketplace/" title="75+ Technology Integrations">Marketplace</a></li>
+                </ul>
+         
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-title animated bounceInDown">Features</div>
+                <ul class="animated bounceInUp">
+                    <!--<li><a href="hotelogix-cloud-based-property-management-system.php" title="Property Management System">Property Management System</a></li>-->
+                    <li><a href="https://www.hotelogix.com/hotelogix-frontdesk-management-system" title="Frontdesk">Frontdesk</a></li>
+                    <li><a href="https://www.hotelogix.com/hotelogix-gds-connect" title="GDS">GDS</a></li>
+                    <li><a href="https://www.hotelogix.com/hotelogix-channel-manager-details" title="Channel Manager">Channel Manager</a></li>
+                    <li><a href="https://www.hotelogix.com/reports" title="Reports">Reports</a></li>
+                    <li><a href="https://www.hotelogix.com/hotelogix-distribution-system" title="Integrated Distribution System">Integrated Distribution System</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-title animated bounceInDown">Property Types</div>
+                <ul class="animated bounceInUp">
+                    <li><a href="https://www.hotelogix.com/hotel-management-software" title="Hotels">Hotels</a></li>
+                    <li><a href="https://www.hotelogix.com/resorts-management-system-software" title="Resorts">Resorts</a></li>
+                    <li><a href="https://www.hotelogix.com/property-types-bed-and-breakfast" title="B&amp;B">B&amp;B</a></li>
+                    <li><a href="https://www.hotelogix.com/apartments-management-system-software" title="Serviced Apartments and Hostels">Serviced Apartments and Hostels</a></li>
+                    <li><a href="https://www.hotelogix.com/property-management-system-large-hotels-hlxe" title="Hotel Groups">Hotel Groups</a></li>
+                </ul>                       
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <!-- <div class="blog relative">
+                    <div class="footer-title animated bounceInDown">From Our Blog</div>
+                                         
+                     <div class="animated bounceInUp">
+                        <a href="" target="_blank"></a>
+                    </div>
+                                        
+                </div>  -->
+                <div class="footer-title animated bounceInDown">Contact Us</div>
+                <ul class="animated bounceInUp">
+                    <li class="sales">
+                        <div>Sales</div>
+                        <p>+1 530 2311 223</p>
+                        <p><a href="mailto:sales@hotelogix.com" class="text-white">sales@hotelogix.com</a></p>
+                    </li>
+                    <li class="support">
+                        <div>Support</div>
+                        <p>24x7 live support</p>
+                        <p><a href="mailto:support@hotelogix.com" class="text-white">support@hotelogix.com</a></p>
+                    </li>
+                </ul> 
+                <div class="newsletter">
+                    <div id="hms-form-div-footer">
+                        <div class="footer-title animated bounceInDown">Newsletter Signup</div>
+                        <div class="row">
+                        <div class="col-xs-12 animated bounceInUp">
+                            <script>
+                            var fdelim = '|:|:|';
+                            var authtoken = 'db8eb92ee6a2ecfb4f98cc90f06a271bcd654f7b473aee95379ed9d2460394ff';
+                            </script>    
+                        <form action="" method="post" id="hlx-footer-form" class="form-inline bv-form" novalidate="novalidate">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                </span>
+                                <input type="text" placeholder="Enter your Email Id" class="form-control" name="footer-email" id="footer-email" data-bv-field="email">
+                                <i style="display: none;" class="form-control-feedback bv-no-label" data-bv-icon-for="email"></i>
+                                <span class="input-group-btn">
+                                    <button type="submit" name="footer-submit" id="footer-submit" class="btn btn-curve btn-green">
+                                        <span class="glyphicon glyphicon-send"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-app clearfix animatedParent animateOnce">
+                    <div class="footer-title animated bounceInDown">Mobile Hotel App</div>
+                    <div class="animated bounceInUp">
+                        <a href="https://play.google.com/store/apps/details?id=com.pocketpms.app&amp;hl=en" id="play-store-footer-button" title="Download Android App"><img src="https://www.hotelogix.com/images/play-strore-icon-small.webp" target="_blank"></a>
+                        <a href="https://itunes.apple.com/fr/app/pocket-pms/id1194551150?l=en&amp;mt=8" id ="app-store-footer-button" title="Download iOS App"><img src="https://www.hotelogix.com/images/ios-app-icon-small.webp" target="_blank"></a>
+                    </div>
+                </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row animatedParent animateOnce">
+                <div class="col-12">
+                     <div class="social-networks">
+                        <ul class="clearfix">
+                            <li class="animated bounceIn">
+                                <a rel="nofollow" href="https://www.facebook.com/Hotelogix" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="twitter-icon animated bounceIn">
+                                <a rel="nofollow" href="https://twitter.com/Hotelogix" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="linkedIn-icon animated bounceIn">
+                                <a rel="nofollow" href="https://www.linkedin.com/company/hotelogix" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li class="youtube-icon animated bounceIn">
+                                <a rel="nofollow" href="http://www.youtube.com/user/Hotelogix1?feature=watch" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li class="blog-icon animated bounceIn">
+                                <a href="https://www.hotelogix.com/blog" title="Hotelogix Blog" target="_blank"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li class="pinterest-icon animated bounceIn">
+                                <a rel="nofollow" href="https://in.pinterest.com/Cloudpms/" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li class="instagram-icon animated bounceIn">
+                                <a rel="nofollow" href="https://www.instagram.com/hotelogix/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright animated bounceInUp text-center">Copyright 2024. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="offer-widget" style="position: fixed;z-index: 99999; right: 8%; bottom: 10px; background-color: #FF6600; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; text-align: center;">
+    🎁 Grab 50% off  <br> 🌟 Now! 🌟
+    </div> -->
+
+</footer>
+<div id="youtubeVideo" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="youtubeVideoFrame" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hotelogixVideo" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="hotelogixVideoFrame" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hotelogixForm" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <div class="embed-responsive embed-responsive-16by9" style="min-height: 430px;">
+                        <iframe id="hotelogixFormFrame" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- buzo team code -->
+<!-- <script src="https://43fd088437d94a1a9a8e5f13ae3046c0.js.ubembed.com" async></script> -->
+<!-- end buzo team code -->
+
+<!--Start of Tawk.to Script-->
+<!--script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6593eb2e8d261e1b5f4e3b92/1hj4stbrj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script-->
+<!--End of Tawk.to Script-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var widget = document.getElementById('offer-widget');
+    if (widget) {
+        widget.addEventListener('click', function() {
+            window.location.href = 'https://try.hotelogix.com/yearend/?utm_source=blogbar&utm_medium=blog&utm_campaign=yearendofferblog';
+        });
+    }
+});
+</script> -->
+       
+        <!--<div class="footer-message">
+       Hotelogix and AxisRooms join hands to offer the most powerful, full-stack solution for hotels
+           
+       </div>-->
+       <div class="spacer"></div>
+
+        <!-- Live chat box start -->
+        <!--Intercom widget start-->
+<script>
+
+            window.intercomSettings = {
+                app_id: "ckuoe4wl",
+            };(function () {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+            ic('reattach_activator');
+            ic('update', intercomSettings);
+        } else {
+            var d = document;
+            var i = function () {
+                i.c(arguments)
+            };
+            i.q = [];
+            i.c = function (args) {
+                i.q.push(args)
+            };
+            w.Intercom = i;
+            function l() {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://widget.intercom.io/widget/ckuoe4wl';
+                var x = d.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })()</script>
+<!--Intercom widget end-->
+        <!-- All js files included in this  -->
+        <!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://www.hotelogix.com/js/jquery.min.js" defer></script>
+<script src="https://www.hotelogix.com/js/bootstrap.min.js" defer></script>
+<script src="https://www.hotelogix.com/js/bootstrapValidator.js" defer></script>
+<script src="https://www.hotelogix.com/js/numscroller.js" defer></script>
+<!--<script src="https://www.hotelogix.com/js/events.js"></script>-->
+<!--<script src="https://www.hotelogix.com/js/socket.io.js"></script>-->
+<!-- owl carousel -->
+<script src="https://www.hotelogix.com/libraries/owlcarousel/owl.carousel.min.js" defer></script>
+<!--<script src="https://www.hotelogix.com/libraries/owlcarousel/owl.carousel-custom.js"></script>-->
+
+<!-- Scroll animations -->
+<script src="https://www.hotelogix.com/libraries/scroll-animations/animations.js" defer></script>
+
+<!-- Flexisel carousel -->
+<script src="https://www.hotelogix.com/libraries/flexisel/jquery.flexisel.js" defer></script>
+<!--<script src="https://www.hotelogix.com/libraries/flexisel/flexisel.js"></script>-->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="https://www.hotelogix.com/js/ie10-viewport-bug-workaround.js"></script>-->
+
+<!-- Floating sidebar -->
+<!--<script src="libraries/floating-sidebar/jquery.floating-sidebar.js"></script>
+<script src="libraries/floating-sidebar/floating-sidebar.js"></script>-->
+
+<!-- LeadFriday code to open popup while exit -->
+<!-- <script src="https://www.hotelogix.com/js/leadFriday.js" defer></script> -->
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22520621.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Custom -->
+<script src="https://www.hotelogix.com/js/common.js?zmxv=128" defer> </script>
+<script>
+        
+</script>
+
+
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        // Capture UTM parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmSource = urlParams.get('utm_source');
+        const utmMedium = urlParams.get('utm_medium');
+        const utmCampaign = urlParams.get('utm_campaign');
+        const utmTerm = urlParams.get('utm_term');
+        const utmContent = urlParams.get('utm_content');
+
+        // Store UTM parameters in Local Storage
+        if (utmSource) localStorage.setItem('utm_source', utmSource);
+        if (utmMedium) localStorage.setItem('utm_medium', utmMedium);
+        if (utmCampaign) localStorage.setItem('utm_campaign', utmCampaign);
+        if (utmTerm) localStorage.setItem('utm_term', utmTerm);
+        if (utmContent) localStorage.setItem('utm_content', utmContent);
+    });
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Google reCAPTCHA API script -->
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var allowedFormIds = ['hsForm_19f647c3-12e3-4439-9ef2-bd579c9ed0e4', 
+                                'hsForm_b4d465a5-690a-4a25-b53d-b7e381bdd571', 
+                                'hsForm_73e3b287-d2ee-4d16-93db-24401481299b'
+                            ]; // Add your allowed form IDs here
+
+        $('form').each(function() {
+            var formId = $(this).attr('id');
+            if (allowedFormIds.includes(formId)) {
+                $(this).find('input[type="button"]').each(function() {
+                    $(this).addClass('g-recaptcha');
+                    $(this).attr({
+                        //'data-sitekey': '6LcG0QoqAAAAAF2E_Wz0u8aSgjNEQZM3oxVFnfam', // live
+                        'data-sitekey': '6LdkzwsqAAAAAKBWD-8oRIGIcnDVrk0g-PaXNLQA', // staging
+                        'data-callback': 'onSubmit',
+                        'data-action': 'submit'
+                    });
+                });
+            }
+        });
+    });
+</script>
+
+
+<script>
+function onSubmit(token) 
+{    
+    var formData = {token: token,};
+
+    jQuery.ajax({
+        type: 'POST',
+        url: 'https://www.hotelogix.com' + '/recaptcha_validation.php',
+        data: formData,
+        success: function(response) {
+            console.log(response);
+            var responseKeys = JSON.parse(response);
+            console.log(responseKeys);
+            if (responseKeys.success) {
+                // var form = jQuery('form');
+                // var formId = form.attr('id');
+                submitForm();
+            } else {
+                alert('reCAPTCHA validation failed: ' + responseKeys['error-codes']);
+            }
+        },
+        error: function(xhr, status, error) {
+            alert('Form submission failed: ' + error);
+        }
+    });
+}
+</script> -->
+
+
+
+<!-- <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('hsForm_b4d465a5-690a-4a25-b53d-b7e381bdd571');
+    var submittedMessage = document.querySelector('.submitted-message');
+    
+    form.addEventListener('submit', function(event) {
+        var requiredFields = form.querySelectorAll('[required]');
+        var isValid = true;
+
+        requiredFields.forEach(function(field) {
+            var errorSpan = document.getElementById(field.id + '-error');
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('error');
+                field.setAttribute('aria-invalid', 'true');
+                field.setAttribute('aria-describedby', field.id + '-error');
+                
+                if (!errorSpan) {
+                    errorSpan = document.createElement('span');
+                    errorSpan.id = field.id + '-error';
+                    errorSpan.className = 'error-message';
+                    errorSpan.textContent = 'Please complete this required field.';
+                    field.parentNode.insertBefore(errorSpan, field.nextSibling);
+                }
+            } else {
+                field.classList.remove('error');
+                field.removeAttribute('aria-invalid');
+                if (errorSpan) {
+                    errorSpan.parentNode.removeChild(errorSpan);
+                }
+            }
+        });
+
+        if (!isValid) {
+            event.preventDefault();
+        } else 
+        {
+            var formData = {
+                name: jQuery('#name-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+                hotel_name: jQuery('#company-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+                no_of_rooms: jQuery('#no_of_rooms-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+                email: jQuery('#email-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+                phone: jQuery('#phone-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+                country: jQuery('#country-b4d465a5-690a-4a25-b53d-b7e381bdd571').val(),
+            };
+
+            jQuery.ajax({
+                type: 'POST',
+                url: 'process_request_a_demo.php',
+                data: formData,
+                success: function(response) {
+                    form.style.display = 'none';
+                    submittedMessage.style.display = 'block';
+                    /*jQuery('.hs_submit').hide();
+                    jQuery('.submitted-message').show().html('<p style="text-align: center;">Thank you!</p><p style="text-align: center;">One of our business consultants will get in touch with you shortly.</p>');*/
+                },
+                error: function(xhr, status, error) {
+                    alert('Form submission failed: ' + error);
+                }
+            });
+        }
+    });
+});
+</script> -->
+
+                                    <!--<script>var settings = {fid:"106",delim:"|:|:|",admindir:"hlx-admin",weburl:"https://www.hotelogix.com"};!function(e, r, o, m, s, c, t){c = r.createElement(o), t = r.getElementsByTagName(o)[0], c.async = 1, c.src = m, t.parentNode.insertBefore(c, t)}(window, document, "script", settings.weburl + "/" + settings.admindir + "/js/creator-form-signup.js?zmxv=20221020", "hms", "head", "register-form");</script>-->
+           <script type="module" src="https://beacon.concierge.liveswitch.com/bubble.js" defer></script><script>window.liveSwitchConciergeCodeName = 'www-example-com-1';</script>
+        
+        <script type="text/javascript">
+            window.hero = new RevenueHero({ routerId: '38' })
+            hero.schedule('hsForm_50b4cc3f-8185-4e53-bb21-2cbdbda48f15')
+        </script>
+    </body>
+    
+</html>
